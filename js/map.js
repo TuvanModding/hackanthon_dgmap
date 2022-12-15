@@ -45,9 +45,6 @@ DG.then(async function () {
     zoom: 13
   });
 
-  
-  await console.log(someMarker)
-
   object.forEach(async (item) => {
     const someMarker = await fetchData(item.coords.latitude, item.coords.longitude)
 
